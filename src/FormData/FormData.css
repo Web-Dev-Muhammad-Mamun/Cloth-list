@@ -1,0 +1,161 @@
+body {
+    background: #7ec9cc;
+    color: black;
+    font-weight: bolder;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 1.5;
+  
+}
+.container {
+    padding: 0;
+    max-width: 1300px;
+    margin: 0;
+}
+.form-container {
+    text-align: start;
+    background: whitesmoke;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+fieldset {
+    padding: 1.5rem;
+    border-radius: 1rem;
+   border-color: white;
+   display: flex;
+   gap: 1.5rem;
+}
+a{
+    font-weight: 500;
+    text-decoration: inherit;
+    color: blue;
+}
+.add-cart-btn, .delete-all-btn {
+    margin: 20px 0;
+   width: 100%;
+  background: white;
+  border: 2px solid black;
+  transition: 0.5s all ease;
+  color: black;
+  font-weight: bolder;
+  opacity: 0.8;
+border-radius: 8px;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    cursor: pointer;
+  }
+  .add-cart-btn:disabled {
+    background: slategray;
+    color: white;
+  }
+  .delete-all-btn {
+    color : red;
+  }
+.add-cart-btn:enabled:hover, .delete-all-btn:hover {
+    width: 100%;
+   background: #7ec9cc;
+   border: 2px solid white;
+   color: white;
+   font-weight: bolder;
+   opacity: 100%;
+ }
+ .delete-all-btn:hover {
+  background: red;
+ }
+.add-cart-btn:focus,
+.add-cart-btn:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+input[type= 'text'], input[type= 'number']  {
+  width: 200px;
+  height: 30px;
+  padding: 10px;
+}
+input {
+  padding: 10px;
+}
+select{
+  padding: 10px;
+  box-shadow: inset 0 1px 2px 1px silver;
+  border: 1px solid #7ec9cc;
+  border-radius: 10px;
+  width: 140px;
+}
+input[type= 'radio'] {
+  box-shadow: none;
+
+}
+input[type="date"] {
+  width: 120px;
+
+}
+input , textarea {
+    border-radius: 10px;
+    /* border:  none; */
+    border: 1px solid #7ec9cc;
+    box-shadow: inset 0 1px 2px 1px silver;
+}
+input::placeholder,textarea::placeholder {
+    font-weight: inherit;
+  color: black;
+  border-radius: 5px;
+  width: 100%;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 20px 0;
+}
+td, th {
+    border: 2px solid #008080;;
+    text-align: center;
+    padding: 10px;
+  }
+tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+
+  /* mobile responsive */
+  /* @media screen and (max-width: 600px) {
+    fieldset {
+     display: unset;
+  }
+  th, td {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 20px;
+    text-align: center;
+  }
+  } */
+  /* Add this CSS at the end of your FormData.css file or in a separate file */
+@media screen and (max-width: 600px) {
+  fieldset {
+    display: unset;
+ }
+  .table table {
+    width: 100%;
+  }
+  .table table th, .table table td {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: left;
+  }
+  .table table th {
+    background-color: #f2f2f2; /* Add background color for header if needed */
+  }
+  .table table tbody td {
+    border-bottom: 1px solid #ddd; /* Add border between rows if needed */
+  }
+  .table table td {
+    text-align: left;
+    padding: 8px;
+  }
+  .table table td:before {
+    content: attr(data-label);
+    font-weight: bold;
+    display: inline-block;
+    width: 50%; /* Adjust width as needed */
+  }
+}
