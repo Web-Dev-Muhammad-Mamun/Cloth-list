@@ -236,7 +236,7 @@ const FormData = () => {
               <img width={"300px"} src={image} alt='' />
             </>
           ) : (
-            <div style={{overflowX:"scroll"}}>
+            <div>
               <table>
               <thead>
                 <tr>

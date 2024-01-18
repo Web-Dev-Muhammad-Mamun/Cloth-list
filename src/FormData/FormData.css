@@ -15,6 +15,7 @@ body {
     text-align: start;
     background: whitesmoke;
     padding: 1rem;
+    padding: 1rem;
     border-radius: 1rem;
 }
 fieldset {
@@ -28,6 +29,10 @@ a{
     font-weight: 500;
     text-decoration: inherit;
     color: blue;
+}
+.heading-section {
+  margin-top: -60px;
+  margin-bottom: -20px;
 }
 .add-cart-btn, .delete-all-btn {
     margin: 20px 0;
@@ -115,20 +120,6 @@ tr:nth-child(even) {
     background-color: #dddddd;
   }
 
-  /* mobile responsive */
-  /* @media screen and (max-width: 600px) {
-    fieldset {
-     display: unset;
-  }
-  th, td {
-    display: block;
-    width: 100%;
-    box-sizing: border-box;
-    margin-top: 20px;
-    text-align: center;
-  }
-  } */
-  /* Add this CSS at the end of your FormData.css file or in a separate file */
 @media screen and (max-width: 600px) {
   fieldset {
     display: unset;
@@ -143,10 +134,10 @@ tr:nth-child(even) {
     text-align: left;
   }
   .table table th {
-    background-color: #f2f2f2; /* Add background color for header if needed */
+    background-color: #f2f2f2; 
   }
   .table table tbody td {
-    border-bottom: 1px solid #ddd; /* Add border between rows if needed */
+    border-bottom: 1px solid #ddd; 
   }
   .table table td {
     text-align: left;
